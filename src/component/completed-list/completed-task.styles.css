@@ -1,0 +1,19 @@
+.completed{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    border-radius: 7px;
+    padding: 8px;
+}
+.completed h2{
+    background-color: #A683E3;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%
+}
+
+ul{
+    list-style-position: inside;
+}
