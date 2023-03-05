@@ -1,0 +1,27 @@
+.header{
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  background-color: #A683E3;
+  text-align: center;
+
+}
+h1{
+    color: #fff;
+    padding: 10px;
+    animation: mover 2s linear infinite alternate;
+}
+
+@keyframes mover {
+  0%{
+    transform: translateX(-30px);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: translateX(30px);
+  }
+}
