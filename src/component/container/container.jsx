@@ -5,20 +5,7 @@ import PendingList from "../pending-list/pending-list.component";
 import CompletedTask from "../completed-list/completed-task.component";
 
 const Container = () => {
-    const [todos,setTodos] = useState([
-        {
-            activity: "breakfast",
-            id: 1
-        },
-        {
-            activity: "bathe",
-            id: 2
-        },
-        {
-            activity: "drink",
-            id: 3
-        }
-    ]);
+    const [todos,setTodos] = useState([]);
     let [inputValue,setInputValue] = useState("");
     let [removedTodos,setRemovedTodos] = useState([]);
 
