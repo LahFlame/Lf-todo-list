@@ -1,19 +1,51 @@
 .completed{
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-    top: 0;
+
     background-color: white;
     border-radius: 7px;
-    padding: 8px;
+    position: relative;
+    color: rgb(20, 20, 20);
 }
 .completed h2{
-    background-color: #A683E3;
+    background-color: rgba(53, 253, 53, 0.87);
     border-radius: 5px;
     padding: 5px;
-    width: 100%
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+.animate{
+    animation: shine 500ms ease-in  2;
+}
+@keyframes shine {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.completed-section{
+    min-height: 60px;    
 }
 
-ul{
+.completed-section ul{
     list-style-position: inside;
+    list-style-type: circle;
+    padding: 7px;
+}
+.completed-section li{
+    padding: 5px;
+    font-size: 20px;
+}
+.completed-section button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
 }

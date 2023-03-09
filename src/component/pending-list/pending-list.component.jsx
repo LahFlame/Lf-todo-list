@@ -5,13 +5,20 @@ import ListItem from "../list-item/list-item.component";
 
 const PendingList = ({todos,handleChange,handleCheckedChange,handleSubmit,inputValue}) => {
     return(
-        <article className="list">
+        <article className="pending">
+            <h2>Pending Tasks</h2>
             {
-                todos.map((todo) => <ListItem key={todo.id} todo={todo} handleCheckedChange={handleCheckedChange} />)
+                <section>
+                    {
+                        todos.map((todo) => <ListItem key={todo.id} todo={todo} handleCheckedChange={handleCheckedChange} />)
+                    }
+                </section>        
             }
-            <form className="item" onSubmit={handleSubmit}>
-                <input type="text" name="" value={inputValue} onChange={handleChange} placeholder="New Item"/>
-                <button type="submit">+</button>
+            <form onSubmit={handleSubmit}>
+                <div className="item">
+                    <input type="text" name="" value={inputValue} onChange={handleChange} placeholder="Add New Item"/>
+                    <button type="submit">+</button>
+                </div>
             </form>
         </article>
     )

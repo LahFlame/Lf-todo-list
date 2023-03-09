@@ -1,12 +1,11 @@
 .header{
-  max-width: 400px;
-  margin: 0 auto 10px;
+  max-width: 350px;
+  margin: 5px auto 10px;
   background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   background-color: #A683E3;
   text-align: center;
-
 }
 h1{
     color: #fff;

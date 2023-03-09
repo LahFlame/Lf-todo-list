@@ -1,10 +1,10 @@
 import React from "react";
-import "./list.styles.css"
+import "./container.styles.css"
 import { useState } from "react";
 import PendingList from "../pending-list/pending-list.component";
 import CompletedTask from "../completed-list/completed-task.component";
 
-const List = () => {
+const Container = () => {
     const [todos,setTodos] = useState([
         {
             activity: "breakfast",
@@ -29,6 +29,9 @@ const List = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(inputValue === ""){
+            return;
+        }
         setTodos(
             [...todos,
                 {
@@ -54,7 +57,11 @@ const List = () => {
         )
         
     }
-
+    const handleReset = () => {
+        setRemovedTodos(
+            []
+        )
+    }
     const wait = (ms) => new Promise(resolve => setInterval(resolve,ms));
 
     return(
@@ -65,12 +72,14 @@ const List = () => {
                 handleChange={handleChange} 
                 handleCheckedChange={handleCheckedChange} 
                 inputValue={inputValue} 
+                
             />
             <CompletedTask 
                 removedTodos={removedTodos}
+                handleReset={handleReset}
             />
         </div>
     )
 }
 
-export default List;
+export default Container;

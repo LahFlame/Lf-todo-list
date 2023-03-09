@@ -2,21 +2,24 @@ import React from "react";
 import "./completed-task.styles.css"
 
 
-const CompletedTask = ({removedTodos}) => {
+const CompletedTask = ({removedTodos,handleReset}) => {
     
     return(
         <article className="completed">
-            <h2>
+            <h2 >
                 Completed Tasks
             </h2>
-            <section>
+            <section className="completed-section">
                    <ul>
                         {
                     removedTodos.map(todo => 
-                        <li>{todo.activity}</li>
+                        <li key={`${todo.activity} a`}>{todo.activity}</li>
                         )
                         }
                     </ul>
+                    {
+                        removedTodos.length ? <button onClick={handleReset}>-</button> : null
+                    }
             </section>
         </article>
     )

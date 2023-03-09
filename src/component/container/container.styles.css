@@ -1,0 +1,16 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 470px) {
+  .container{
+    max-width: 450px;
+    position: relative;
+  }
+  .completed{
+   
+  }
+}
