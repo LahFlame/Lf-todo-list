@@ -1,9 +1,9 @@
 .completed{
-
+    max-width: 250px;
     background-color: white;
     border-radius: 7px;
-    position: relative;
     color: rgb(20, 20, 20);
+    margin: 0 auto;
 }
 .completed h2{
     background-color: rgba(53, 253, 53, 0.87);
@@ -11,6 +11,7 @@
     padding: 5px;
     width: 100%;
     color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
 .animate{
     animation: shine 500ms ease-in  2;
@@ -48,4 +49,5 @@
     color: #fff;
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }

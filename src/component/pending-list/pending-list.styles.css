@@ -1,11 +1,10 @@
 .pending{
     width: 100%;
-    margin: 30px auto;
+    margin: 30px 30px 50px 0;
     background: white;
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-    max-height: 400px;
-    overflow: scroll;
+    flex-grow: 2;
     position: relative;
   }
   .pending h2{
